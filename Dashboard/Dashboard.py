@@ -20,7 +20,7 @@ max_date = hour_df["dteday"].max()
 
 # Sidebar untuk filter rentang tanggal
 with st.sidebar:
-    st.image(r"C:\Users\ASUS\Submission\pngegg.png", width=200)
+    st.image(r"https://github.com/berlinaulia/Submission-Analisis-Data/blob/main/pngegg.png?raw=true", width=200)
     start_date, end_date = st.date_input(
         label="Date Range", 
         min_value=min_date,
