@@ -10,7 +10,7 @@
 ## Run Streamlit
 Masuk ke direktori proyek (Lokal):
 ```
-cd proyek_analisis_data/dashboard
+cd proyek_analisis_data/Dashboard
 run streamlit dashboard.py
 
 ```
