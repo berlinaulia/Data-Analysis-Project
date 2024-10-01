@@ -7,7 +7,7 @@ import streamlit as st
 sns.set(style='dark')
 
 # Membaca file CSV dan mengatur datetime
-hour_df = pd.read_csv(r"C:\Users\ASUS\Submission\Dashboard\main.csv")
+hour_df = pd.read_csv(r"https://raw.githubusercontent.com/berlinaulia/Submission-Analisis-Data/refs/heads/main/Dashboard/main.csv")
 datetime_columns = ["dteday"]
 hour_df.sort_values(by="dteday", inplace=True)
 hour_df.reset_index(drop=True, inplace=True)
