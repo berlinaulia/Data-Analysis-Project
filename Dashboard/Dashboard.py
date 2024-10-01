@@ -202,7 +202,7 @@ def analyze_rfm_casual_users(hour_df):
     st.pyplot(fig)
 
 # Pemanggilan Fungsi di Streamlit
-st.title("Analisis RFM Pengguna Sepeda")
+st.title("Analisis RFM Penyewaan Sepeda")
 
 
 # Menggunakan fitur button, untuk memilih apakah ingin mengecek registered aatau casual users
