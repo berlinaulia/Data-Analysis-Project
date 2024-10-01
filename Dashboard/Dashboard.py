@@ -79,8 +79,9 @@ def customer_type(data_frame):
 # Panggil fungsi dengan data yang sudah difilter
 customer_type(main_df)
 
-# Fungsi untuk menampilkan bar chart waktu penyewaan rendah
-def plot_low_rent_hours(df):
+# Fungsi untuk menampilkan bar chart waktu
+def plot_time_rent_hours(df):
+    st.title("Grafik Persewaan Sepeda berdasarkan Waktu")
     sum_rental_items_df = df.groupby("time_of_day").count_cr.sum().reset_index()
 
     fig, ax = plt.subplots(figsize=(18, 8))
@@ -98,10 +99,11 @@ def plot_low_rent_hours(df):
     st.pyplot(fig)
 
 # Panggil fungsi untuk menampilkan bar chart
-plot_low_rent_hours(main_df)
+plot_time_rent_hours(main_df)
 
 # Fungsi untuk menampilkan scatter plot jumlah pelanggan maksimum per bulan
 def plot_max_customers_per_month(main_df):
+    st.title("Grafik Jumlah Pelanggan Maksimum")
     fig, ax = plt.subplots(figsize=(24, 5))
 
     # Menghitung jumlah pelanggan maksimum per hari
@@ -119,7 +121,6 @@ def plot_max_customers_per_month(main_df):
     return fig
 
 # Panggil fungsi plot
-st.title("Grafik Jumlah Pelanggan Maksimum")
 fig = plot_max_customers_per_month(main_df)
 st.pyplot(fig)
 
